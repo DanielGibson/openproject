@@ -32,5 +32,6 @@ FactoryBot.define do
     sequence(:name) { |n| "Storage #{n}" }
     sequence(:host) { |n| "https://host#{n}.example.com" }
     creator factory: :user
+    provider_fields { { password: 'OpenProjectSecurePassword' } }
   end
 end

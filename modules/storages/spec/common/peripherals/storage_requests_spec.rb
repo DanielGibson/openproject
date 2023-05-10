@@ -37,7 +37,7 @@ describe Storages::Peripherals::StorageRequests, webmock: true do
   let(:origin_user_id) { 'admin' }
 
   let(:storage) do
-    build(:storage, host: url, password: 'OpenProjectSecurePassword')
+    build(:storage, host: url)
   end
 
   let(:token) do
